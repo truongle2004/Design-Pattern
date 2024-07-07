@@ -1,0 +1,121 @@
+<mxfile host="65bd71144e">
+    <diagram id="1G-1OcFTsPOOnno1StIw" name="Page-1">
+        <mxGraphModel dx="2352" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="-180" y="380" width="300" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="view" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="5" vertex="1">
+                    <mxGeometry x="77.77777777777779" width="159.72222222222223" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="TempetureView&lt;br&gt;&lt;hr&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- jPanel: JPanel&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;# jlabelC, jlabelF, jlabelResult: JLabel&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- jMenuBar: JMenubar&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;# f2cItem, c2fItem: JMenuItem&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- temperatureModal: TemperatureModal&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="5" vertex="1">
+                    <mxGeometry x="15.789473684210526" y="20" width="284.2105263157895" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="330" y="420" width="230" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="TemperatureModal&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- result: double&lt;/div&gt;&lt;hr style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ c2f (double c ): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ f2c (double&amp;nbsp; f): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getResult(): double&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="6" vertex="1">
+                    <mxGeometry y="6.3" width="221.48148148148147" height="113.70000000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="modal" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="6" vertex="1">
+                    <mxGeometry x="84.08999999999997" y="-7.75" width="53.31" height="17.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="100" y="150" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="TemperatureController&lt;br&gt;- temperatureModal: TemperatureModal&lt;br&gt;- temperatureView: TemperatureView&lt;br&gt;- commandProcessor: CommandProcessor&lt;br&gt;&lt;hr&gt;+ actionPerformed(ActionEvent e): void&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="9" vertex="1">
+                    <mxGeometry x="1" y="40" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="controller&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="9" vertex="1">
+                    <mxGeometry x="58.333333333333336" width="163.33333333333334" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="jframe&lt;br&gt;filed: type&lt;br&gt;&lt;hr&gt;method(): type&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-440" y="445" width="110" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="html=1;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=0;" parent="1" source="2" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="675" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="extends&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="13" vertex="1" connectable="0">
+                    <mxGeometry x="0.0606" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;subcribe&lt;br&gt;+ update(): void" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="660" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="17" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-90" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="use" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="19" vertex="1" connectable="0">
+                    <mxGeometry x="0.1217" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="publisher&lt;br&gt;+ subcrlibers: List&amp;lt;Subcriber&amp;gt;&lt;br&gt;+ subcrinbe(): void&lt;br&gt;+ unsubcribe(): void&lt;br&gt;+ notifySubcribe(): void" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="820" width="340" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0.523;entryY=0.015;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;entryPerimeter=0;" parent="1" source="2" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=open;endFill=0;" parent="1" source="10" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;entryX=0.455;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=block;endFill=0;" parent="1" source="7" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="37" vertex="1" connectable="0">
+                    <mxGeometry x="-0.209" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;" edge="1" parent="1" source="2" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;entryX=0.789;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;" edge="1" parent="1" source="10" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="group" connectable="0" vertex="1" parent="1">
+                    <mxGeometry x="-425" y="4810" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Control" style="whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="41">
+                    <mxGeometry x="20" width="150" height="21.176470588235297" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" style="edgeStyle=none;html=1;endArrow=open;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.833;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="42" target="47">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="630" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CommandProcessor&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;#&lt;/b&gt; temperatureModal: TemperatureModal&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+execute(Command)&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="30" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.19;entryY=1.023;entryDx=0;entryDy=0;endArrow=open;endFill=0;entryPerimeter=0;" edge="1" parent="1" source="10" target="42">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=none;html=1;entryX=0.913;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;" edge="1" parent="1" source="47" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Abstract&lt;br&gt;Command&lt;br&gt;+ execute()" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=none;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="49" target="47">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="C2FCommand&lt;br&gt;- value: double&lt;br&gt;+ execute(): void" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="120" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;html=1;entryX=1.002;entryY=0.606;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="50" target="47">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="F2CCommand&lt;br&gt;- value: double&lt;br&gt;+ execute(): void" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
