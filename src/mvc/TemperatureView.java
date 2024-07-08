@@ -8,6 +8,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import command.Command;
 import observer.Subcriber;
 
 public class TemperatureView extends JFrame implements Subcriber {
@@ -67,13 +68,10 @@ public class TemperatureView extends JFrame implements Subcriber {
 
     @Override
     public void update() {
-        System.out.println("C" + jTextFieldC.getText().equals(""));
-        System.out.println("F" + jTextFieldF.getText().equals(""));
-
-        if (jTextFieldC.getText().equals("") == false) {
-            jTextFieldF.setText("" + temperatureModal.getResult());
-        } else if (jTextFieldF.getText().equals("") == false) {
+        if (jTextFieldC.getText().equals("") == true) {
             jTextFieldC.setText("" + temperatureModal.getResult());
+        } else if (jTextFieldF.getText().equals("") == true) {
+            jTextFieldF.setText("" + temperatureModal.getResult());
         }
     }
 }

@@ -2,10 +2,6 @@ package mvc;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
 import command.C2FCommand;
 import command.Command;
 import command.F2CCommand;
@@ -21,28 +17,6 @@ public class TemperatureController implements ActionListener {
 
         this.temperatureView.c2fItem.addActionListener(this);
         this.temperatureView.f2cItem.addActionListener(this);
-
-        // this.temperatureView.jTextFieldC.addKeyListener(new KeyAdapter() {
-        // @Override
-        // public void keyPressed(KeyEvent e) {
-        // if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-        // double valueC = Double.parseDouble(temperatureView.jTextFieldC.getText());
-        // Command command = new C2FCommand(temperatureModal, valueC);
-        // commandProcessor.execute(command);
-        // }
-        // }
-        // });
-
-        // this.temperatureView.jTextFieldF.addKeyListener(new KeyAdapter() {
-        // @Override
-        // public void keyPressed(KeyEvent e) {
-        // if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-        // double valueF = Double.parseDouble(temperatureView.jTextFieldF.getText());
-        // Command command = new F2CCommand(temperatureModal, valueF);
-        // commandProcessor.execute(command);
-        // }
-        // }
-        // });
 
     }
 
