@@ -67,13 +67,13 @@ public class TemperatureView extends JFrame implements Subcriber {
 
     @Override
     public void update() {
-        // jLabelResult.setText("result: " + temperatureModal.getResult());
-        if (jTextFieldC.getText() == " ") {
-            jTextFieldC.setText("" + temperatureModal.getResult());
-        } else {
-            jTextFieldF.setText("" + temperatureModal.getResult());
-        }
-        // if(jtext)
-    }
+        System.out.println("C" + jTextFieldC.getText().equals(""));
+        System.out.println("F" + jTextFieldF.getText().equals(""));
 
+        if (jTextFieldC.getText().equals("") == false) {
+            jTextFieldF.setText("" + temperatureModal.getResult());
+        } else if (jTextFieldF.getText().equals("") == false) {
+            jTextFieldC.setText("" + temperatureModal.getResult());
+        }
+    }
 }
