@@ -8,20 +8,16 @@ import java.awt.event.KeyListener;
 
 import command.C2FCommand;
 import command.Command;
-import command.CommandProcessor;
 import command.F2CCommand;
 
 public class TemperatureController implements ActionListener {
     private TemperatureModal temperatureModal;
     private TemperatureView temperatureView;
-    private CommandProcessor commandProcessor;
 
     public TemperatureController(TemperatureModal temperatureModal, TemperatureView temperatureView) {
         this.temperatureModal = temperatureModal;
         this.temperatureView = temperatureView;
         this.temperatureModal.subcriber(temperatureView);
-
-        commandProcessor = CommandProcessor.getInstance();
 
         this.temperatureView.c2fItem.addActionListener(this);
         this.temperatureView.f2cItem.addActionListener(this);
@@ -50,6 +46,10 @@ public class TemperatureController implements ActionListener {
 
     }
 
+    public void execute(Command command) {
+        command.execute();
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -60,13 +60,13 @@ public class TemperatureController implements ActionListener {
 
             double valueC = Double.parseDouble(temperatureView.jTextFieldC.getText());
             commandRomote = new C2FCommand(temperatureModal, valueC);
-            commandProcessor.execute(commandRomote);
+            execute(commandRomote);
 
         } else if (command == "f2c") {
 
             double valueF = Double.parseDouble(temperatureView.jTextFieldF.getText());
             commandRomote = new F2CCommand(temperatureModal, valueF);
-            commandProcessor.execute(commandRomote);
+            execute(commandRomote);
         }
     }
 }
